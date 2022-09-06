@@ -4,357 +4,227 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table</title>
+    <title>Paytm</title>
     <style>
-        *{
+        body{
             font-family: sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .parent1{
-            width: 75%;
+        .container{
+            padding: 65px 0;
+            color: white;
+            width: 1260px;
             margin: auto;
-            text-align: center;
         }
-        .parent{
+        .row{
+            height: 183px;
             display: flex;
-            height: 420px;
-           
+            margin-top: 25px;
         }
-    .container{
-        display: grid;
-        grid-template-columns:40px 40px ;
-        grid-template-rows: repeat(7, 40px);
-        grid-gap: 10px;
-        height: auto;
-        width: auto;
-        padding-right: 10px;
-        margin-left: 80px;
-
-    }
-    .table{
-        display: grid;
-        grid-template-columns: repeat(14,38px);
-        grid-template-rows: repeat(2, 40px);
-        height: auto;
-        width: 538px;
-        grid-gap: 0.5px ;
-        background-color: rgb(58, 46, 46);
-        margin-left: 300px;
-       
-    }
-    .container1{
-        display: grid;
-        grid-template-columns: repeat(10, 40px) ;
-        grid-template-rows: repeat(4, 40px);
-        grid-gap: 10px;
-        height: auto;
-        width: auto;
-    }
-       
-    .container0{
-        display: grid;
-        grid-template-columns: 40px ;
-        grid-template-rows: repeat(10, 40px)  ;
-        grid-gap: 10px;
-        height: auto;
-        width: auto;
-        margin-right: 10px;
-    }
-    .container2{
-        display: grid;
-        grid-template-columns:repeat(6,40px) ;
-        grid-template-rows: repeat(7, 40px)  ;
-        grid-gap: 10px;
-        height: auto;
-        width: auto;
-        margin-left: 10px;
-
-    }
-    .green{
-        background-color: rgb(154, 179, 87);
-        border: 2px solid black;
-    }
-    .pink{
-        background-color: rgb(212, 44, 100);
-        text-align: center;
-        color: black;
-        border: 2px solid black;
-        padding-top: 7px;
-    }
-    .blue{
-        background-color: blue;
-    }
-    .yellow{
-        background-color: rgb(244, 219, 79);
-        text-align: center;
-        padding-top: 7px;
-        border: 2px solid black;
-    }
-    .brown{
-        background-color: rgba(71, 63, 63, 0.921);
-        text-align: center;
-        padding-top: 7px;
-        border: 2px solid black;
-    }
-    .pink{
-        background-color: rgb(240, 58, 119);
-        border: 2px solid black;
-    }
-    .orange{
-        background-color: rgb(240, 96, 56);
-        border: 2px solid black;
-    }
-    .violet{
-    background-color: rgb(154, 38, 154);
-    border: 2px solid black;
-    }
-   .gren{
-    background-color: rgb(42, 182, 74);
-    border: 2px solid black;
-    } 
-    .greeen{
-        background-color: rgb(76, 99, 59);
-        border: 1px solid rgba(93, 93, 93, 0.877);
-    } 
-    .light{
-        background-color: rgb(144, 190, 74);
-        border: 1px solid rgba(87, 75, 75, 0.545);
-    }
-   .skin{
-       background-color: rgb(243, 211, 221);
-       border: 4px solid black;
-    }
-    .silicon{
-        height: 125px;
-        width: 125px;
-        background-color: rgb(154, 179, 87);
-        margin: 9px 0px 12px 0px;
-        border: 2px solid black;
-    }
-    .right{
-        text-align: right;
-        margin: 10px 10px 10px 10px;
-        font-size: 18px;
-    }
-    .font{
-        font-size: 48px;
-        padding-bottom: 8px;
-        text-align: left;
-        padding-left: 10px;
-    }
-    .bottom{
-        padding-left: 10px;
-        font-size: 17px;
-        text-align: left;
-    }
-    H1{
-        padding: 50px 0px 20px 0px;
+        .card1, .card{
+            margin-right: 32px;
+            text-align: left;
+            border-radius: 12px ;
+            padding: 16px 11px 16px 16px;
+            height: 100%;
+            width: 12%;
+            cursor: pointer;
+        }
         
-    }
-    .h{
-        text-align: center;
-       padding-top: 6px;
-        background-color: brown;
-        font-size: 22px;
-        color: white;
-        border: 2px solid black;
-    }
-    .box1{
-        width: 80%;
-        margin: auto;
-    }
-    .la{
-        color: rgb(252, 242, 242);
+        .card1:hover{
+            background-color: #0d3e80;
+        }
+        .card:hover{
+            background-color: #00afe3;
+        }
+        h1{
+            font-size: 36px;
+        }
+       .line1{
+        font-size: 17px; 
+        font-weight: 500;
+        padding-bottom: 5px;
+       }
+       .line2,.line3{
         font-size: 15px;
-        text-align: center;
-        padding-top: 14px;
-    }
-    .am{
-        font-size: 15px;
-        text-align: center;
-        padding-top: 14px;
-        font-weight: bold;
-    }
-    .no{
-        font-size: 15px;
-        text-align: right;
-        padding-top: 19px;
-        padding-right: 1px;
-        font-weight: bold; 
-    }
+        font-weight: 700;
+        padding-bottom: 5px;
+       }
+       .lane1,.lane2{
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 2px;
+       }
+        
+        img{
+            height: 64px;
+            width: 64px;
+            padding-bottom: 17px;
+        }
+        .box{
+            height: auto;
+            width: 100%;
+            
+        }
+        .clor{
+            background-color: #00baf2;
+        }
+        .clr{
+            background-color: #0f4a8a;
+        }
+        .sign{
+             margin-left: 6px; 
+             padding: 3px;
+             border: solid #fff;
+             border-width: 0 2px 2px 0; 
+             display: inline-block; 
+             transition: all .3s ease; 
+             -webkit-transform: rotate(-45deg); 
+             transform: rotate(-45deg);
+        }
 
     </style>
 </head>
 <body>
-    <div class="parent1">
-    <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
-    <div class="parent">
+    <div class="box clor">
 
-   <div class="container">
+    <div class="container clor">
+        <h1>Recharge & Pay Bill on Paytm.</h1>  
 
-    <div class="h">H</div>
-    <div ></div>
-    <div class="green"></div>
-    <div class="pink">4</div>
-    <div class="green"></div>
-    <div class="pink">12</div>
-    <div class="green"></div>
-    <div class="pink">20</div>
-    <div class="green"></div>
-    <div class="pink">38</div>
-    <div class="green"></div>
-    <div class="pink">56</div>
-    <div class="green"></div>
-    <div class="pink">88</div>
-    
-   </div> 
-   <div class="container0">
-   <div class=""></div>
-   <div class=""></div>
-   <div class=""></div>
-   <div class=""></div>
-   <div class=""></div>
-   <div class="skin"></div>
-   <div class="skin"></div>
-   </div>
 
-   <div class="box">
-    <div class="silicon">
-          <div class="right">14</div>
-            <div class="font">Si</div>
-          <div class="bottom">Silicon</div>
+    <div class="row">
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="">
+            <div class="line1">Recharge </div>
+            <div class="line2">Prepaid</div>
+            <div class="line3">Mobile
+                <div class="sign"></div>
+            </div>
+        
+        </div>
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="">
+           <div class="line1">Pay </div>
+           <div class="line2">Rent</div>
+           <div class="line3">Payment
+            <div class="sign"></div>
+           </div>
+        
+        </div>
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="">
+           <div class="line1">Pay </div>
+           <div class="line2">Electricity</div>
+           <div class="line3">Bill
+            <div class="sign"></div>
+           </div>
+        
+        </div>
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="">
+           <div class="line1">Recharge</div>
+           <div class="line2">DTH</div>
+           <div class="line3">Connection
+            <div class="sign"></div>
+           </div>
+        
+        </div>
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="">
+           <div class="line1">Book</div>
+           <div class="line2">Gas</div>
+           <div class="line3">Cylinder
+            <div class="sign"></div>
+           </div>
+        
+        </div>
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="">
+           <div class="line1">Pay</div>
+           <div class="line2">Credit</div>
+           <div class="line3">card Bill
+            <div class="sign"></div>
+           </div>
+        
+        </div>
+        <div class="card">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" alt="">
+           <div class="line1">All</div>
+           <div class="line2">Payment</div>
+           <div class="line3">Services
+            <div class="sign"></div>
+           </div>
+        
+        </div>
     </div>
-
-    <div class="container1">
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
     </div>
 </div>
-    <div class="container2">
 
-        <div ></div>
-        <div ></div>
-        <div ></div>
-        <div ></div>
-        <div ></div>
-        <div class="yellow"></div>
 
-        <div class="violet"></div>
-        <div class="gren"></div>
-        <div class="gren"></div>
-        <div class="gren"></div>
-        <div class="pink"></div>
-        <div class="yellow"></div>
 
-        <div class="orange"></div>
-        <div class="violet"></div>
-        <div class="gren"></div>
-        <div class="gren"></div>
-        <div class="pink"></div>
-        <div class="yellow"></div>
 
-        <div class="orange"></div>
-        <div class="violet"></div>
-        <div class="violet"></div>
-        <div class="gren"></div>
-        <div class="pink"></div>
-        <div class="yellow"></div>
-
-        <div class="orange"></div>
-        <div class="orange"></div>
-        <div class="violet"></div>
-        <div class="violet"></div>
-        <div class="pink"></div>
-        <div class="yellow"></div>
-
-        <div class="orange"></div>
-        <div class="orange"></div>
-        <div class="orange"></div>
-        <div class="violet"></div>
-        <div class="pink"></div>
-        <div class="yellow"></div>
-
-        <div class="brown"></div>
-        <div class="brown"></div>
-        <div class="brown"></div>
-        <div class="brown"></div>
-        <div class="brown"></div>
-        <div class="brown"></div>
+ <div class="box clr">
+    <div class="container clr">
+        <h1>Book & Buy on Paytm.</h1>  
+    <div class="row">
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="">
+           <div class="lane1">Movie</div>
+           <div class="lane2">Ticket
+            <div class="sign"></div>
+           </div>
+           
+        </div>
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" alt="">
+           <div class="lane1">Flight</div>
+           <div class="lane2">Ticket
+            <div class="sign"></div>
+           </div>
+           
+        </div>
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" alt="">
+           <div class="lane1">Bus</div>
+           <div class="lane2">Ticket
+            <div class="sign"></div>
+           </div>
+           
+        </div>
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" alt="">
+           <div class="lane1">Train</div>
+           <div class="lane2">Ticket
+            <div class="sign"></div>
+           </div>
+           
+        </div>
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png" alt="">
+           <div class="lane1">Car &</div>
+           <div class="lane2">Bikes
+            <div class="sign"></div>
+           </div>
+        </div>
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" alt="">
+           <div class="lane1">International</div>
+           <div class="lane2">Flights
+            <div class="sign"></div>
+           </div>
+           
+        </div>
+        <div class="card1">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="">
+           <div class="lane1">Invest</div>
+           <div class="lane2">in Stocks
+            <div class="sign"></div>
+           </div>
+          
+        </div>
     </div>
     </div>
-   </div>
-  <div class="box1">
-   <div class="table">
-
-    <div class="greeen"><div class="la">La</div></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-    <div class="greeen"></div>
-
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"><div class="am">Am</div></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"></div>
-    <div class="light"><div class="no">No</div></div>
-
-
-   </div>
 </div>
 </body>
 </html>
